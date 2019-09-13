@@ -162,7 +162,7 @@ class _DayBasedChangablePicker<T> extends State<DayBasedChangablePicker<T>> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: widget.datePickerLayoutSettings.monthPickerPortraitWidth,
+      width: MediaQuery.of(context).size.width,
       height: widget.datePickerLayoutSettings.maxDayPickerHeight,
       child: Stack(
         children: <Widget>[
